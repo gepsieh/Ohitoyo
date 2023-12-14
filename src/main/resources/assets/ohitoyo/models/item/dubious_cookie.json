@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "ohitoyo:item/normalcookie"
+		"layer0": "ohitoyo:item/dubious_cookie"
 	}
 }

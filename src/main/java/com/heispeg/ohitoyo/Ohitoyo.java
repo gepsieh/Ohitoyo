@@ -1,6 +1,8 @@
 package com.heispeg.ohitoyo;
 
-import com.heispeg.ohitoyo.item.ModItem;
+import com.heispeg.ohitoyo.block.ModBlocks;
+import com.heispeg.ohitoyo.item.ModCreativeModeTab;
+import com.heispeg.ohitoyo.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -43,7 +45,11 @@ public class Ohitoyo
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         
-        ModItem.register(modEventBus);
+        ModCreativeModeTab.register(modEventBus);
+        
+        ModItems.register(modEventBus);
+        
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -62,10 +68,11 @@ public class Ohitoyo
     
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-    	if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
-    	{
-    		event.accept(ModItem.NORMAL_COOKIE);
-    	}
+//    	if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
+//    	{
+//    		event.accept(ModItem.NORMAL_COOKIE);
+//    		event.accept(ModItem.DUBIOUS_COOKIE);
+//    	}
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

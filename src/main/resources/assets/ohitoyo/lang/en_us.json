@@ -1,3 +1,9 @@
 {
-	"item.ohitoyo.normalcookie": "Normal Cookie"
+	"item.ohitoyo.normal_cookie": "Normal Cookie",
+	"item.ohitoyo.dubious_cookie": "Dubious Cookie",
+	
+	"block.ohitoyo.cookie_block": "Block of Cookie",
+	
+	"creativetab.ohitoyo_item_tab": "Ohitoyo Items",
+	"creativetab.ohitoyo_block_tab": "Ohitoyo Blocks"
 }
